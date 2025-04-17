@@ -1,28 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha pagina pessoal</title>
+    <title>Página Pessoal</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        header nav ul li {
+            display: inline;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: #f4f4f4;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #000;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<style>
-
-</style>
 <body>
     <header>
-        <h1>bem vindo à minha página pessoal!</h1>
-        <p> Estudante de programação</p>
+        <h1>Bem-vindo à minha página pessoal!</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2> Minhas habilidades</h2>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
             <ul>
-                <li>Logica de programação</li> 
-                
-
-
+                <li>Nome: Pedro</li>
+                <li>Idade: 16 anos</li>
+                <li>Cidade: Piracicaba</li>
+                <li>Profissão: Desenvolvedor Web</li>
+            </ul>
+            <p>Olá! Meu nome é Pedro. Sou apaixonado por tecnologia e desenvolvimento web. Estou sempre em busca de novos desafios e aprendizados.</p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5, CSS3 e JavaScript</li>
+                <li>Design Responsivo</li>
+                <li>Frameworks Front-end</li>
+                <li>Versionamento com Git</li>
+            </ul>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo através das redes sociais ou envie um e-mail:</p>
+            <ul>
+                <li>E-mail: pedro@email.com</li>
+                <li>GitHub: <a href="https://github.com/PedrinhoPomba3" target="_blank">github.com/pedro</a></li>
             </ul>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2023 Pedro. Todos os direitos reservados. | <a href="#top">Voltar ao topo</a></p>
+    </footer>
 </body>
 </html>
